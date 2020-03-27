@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat:400,700|Pattaya&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700i&display=swap');
+
+body{
+  background: #0A090A;
+  color: #ffffff;
+  background-image: url(../img/main-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 1920px;
+}
+
+#body {
+  max-width: 1140px;
+  margin: auto;
+}
+
+/*заглавие*/
+#head {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 45px;
+  margin-bottom: 30%;
+}
+
+#logo {
+  font-family: 'Pattaya', sans-serif;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  flex: 0.8;
+}
+
+#search input{
+  flex: 1;
+  border: none;
+  border-radius: 5px;
+  background: rgba(196, 196, 196, 0.5);
+  padding: 12px 18px 12px 18px;
+  color: #AEAEAE;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+#search button{
+  background-color: transparent;
+  border: none;
+  padding: 10px 18px;
+}
+
+input::placeholder{
+  color: #AEAEAE
+}
+
+#user {
+  display: flex;
+  align-items: center;
+}
+
+#ava {
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+/*главная часть*/
+#main h1 {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-style: 48px;
+  line-height: 64px;
+  margin-bottom: 7px;
+}
+
+#main p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 23px; 
+  color: #787878;
+  margin-bottom: 38px;
+}
+
+
+/*главная часть, название фильма, трейлер, подробнее*/
+#info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+#info a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+#movie{
+  display: flex;
+  align-items: center;
+}
+
+#movie #film {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+  background: #FFFFFF;
+  border-radius: 3px;
+  padding: 5px 10px;
+  margin-right: 20px;
+}
+
+#movie #country{
+  font-size: 16px;
+  line-height: 19px;
+  margin-right: 33px;
+}
+
+#movie a:before{
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/play.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-right: 15px;
+}
+
+#more:after{
+  content: '';
+  width: 30px;
+  height: 30px;
+  background-image: url(../img/play.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-left: 15px;
+  transform: rotate(90deg);
+}
+
+/*контент постер, полное описание всего*/
+#content{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Caveat', cursive;
+  background: #FFFFFF;
+  border-radius: 3px;
+  color: #000000;
+  padding: 3% 4%;
+}
+
+/* короткая инфа о фильме слева */
+#short-info{
+  margin-right: 3%;
+}
+
+#short-info img{
+  display: block;
+  margin-top: -40%;
+}
+
+#short-info button{
+  background: #FF8F27;
+  padding: 10px 44px;
+  margin-top: 20px;
+  color: #FFFFFF;
+  border: none;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+#short-info h3{
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  padding-left: 15px;
+  margin-bottom: 10px;
+}
+
+#short-info ul{
+  margin: 0;
+  list-style: none;
+  padding-left: 15px;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+/* полная инфа о фильме*/
+#full-info{
+  flex: 0.95;
+}
+
+#nav-tabs{
+  display: flex;
+  align-items: center;
+  margin-bottom: 4%;
+}
+
+#nav-tabs a{
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  line-height: 21px;
+  margin-right: 4%;
+}
+
+#nav-tabs a:not(:last-child){
+  margin-right: 4%;
+}
+
+#nav-tabs #active{
+  color: #FF8F27;
+}
+
+#full-content{
+  display: flex;
+  justify-content: space-between;
+}
+
+#tabs-content p{
+  margin-right: 70px;
+  color: #000000;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+#subscribe h3{
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 14px;
+  margin-top: 0;
+}
+
+#subscribe-form {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+#subscribe-form input{
+  border: none;
+  border-radius: 5px 0px 0px 5px;
+  background: rgba(196, 196, 196, 0.5);
+  padding: 12px 18px 12px 18px;
+  color: #AEAEAE;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+#subscribe-form button{
+  background: #FF8F27;
+  border-radius: 0px 5px 5px 0px;
+  border: none;
+  padding: 12px;
+}
+
+/* адаптив */
+@media (max-width: 1200px) {
+  #body{
+    max-width: 960px;
+  }
+  #nav-tabs{
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 992px) {
+  #body{
+    max-width: 740px;
+  }
+
+  #nav-tabs {
+    flex-wrap: wrap;
+  }
+
+  #nav-tabs a{
+    flex-basis: 20%;
+    line-height: 2;
+  }
+  #full-content{
+    flex-wrap: wrap;
+  }
+  #tabs-content{
+    margin-bottom: 4%;
+  }
+
+  #tabs-content p{
+    font-size: 14px;
+  }
+
+  #short-info ul{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  #body{
+    max-width: 540px;
+  }
+
+  #info #more{
+    display:none;
+  }
+
+  #nav-tabs a{
+    flex-basis: 33%;
+  }
+
+  #tabs-content{
+    margin-right: 0;
+  }
+
+
+}
+
+@media (max-width: 578px) {
+  #body{
+    width: 90%;
+  }
+
+  #head{
+    flex-wrap: wrap;
+  }
+
+  #search{
+    flex-basis: 100%;
+    order:3;
+    margin-top: 5%;
+  }
+
+  #content{
+    flex-wrap: wrap;
+  }
+
+  #short-info{
+    margin-bottom: 5%;
+    justify-content: center;
+  }
+
+  #short-info ul,#short-info h3{
+    display: none;
+  }
+
+  #movie{
+    flex-wrap: wrap;
+  }
+
+  #movie a{
+    flex-basis: 100%;
+    margin-top: 4%;
+  }
+
+  #short-info {
+    margin-right: 0;
+  }
+
+  #short-info button{
+    width: 100%;
+  }
+
+  #short-info img{
+    margin-top: -20%;
+    display: inline-block;
+    width: 100%;
+  }
+}
